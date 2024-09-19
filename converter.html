@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <style>
+ body {
+    background-color: honeydew;
+    text-align: center;
+    border-style: solid;
+ }
+ .converter {
+    margin-top: 20px;
+ }
+ .container {
+   padding: 20px;
+   text-align: center;
+ }
+ .label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-transform: initial;
+ }
+ #celsius {
+    padding: 5px;
+    width: 10%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+ }
+ #fahrenheit {
+    margin-top: 5px;
+    width: 10%;
+    height: 20px;
+ }
+ #botton {
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid;
+ }
+    </style>
+</head>
+<body>
+   <div class="container">
+      <h1> Temparature Converter </h1>
+        <div class="Converter">
+        <label> Celsius </label>
+        <input type = "text" id = "celsius"  placeholder="Enter Temparature in Celsius" required minlength="1" maxlength="10" size="30"/><br>
+        <label> Fahrenheit</label>
+        <input type = "number" id="fahrenheit" disabled minlength="1" maxlength="10" size="30"/><br>
+        <button id="button" onclick="convert()"> Convert </button>
+        <button onclick="reset()"> Reset </button>
+    </div>
+   </div>
+   <script src="converter.js">
+</script>
+</body>
+</html>
